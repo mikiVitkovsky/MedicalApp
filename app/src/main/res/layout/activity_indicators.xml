@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/activity_indicators"
+    android:background="@drawable/med_background"
+    tools:context=".IndicatorsActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical indicators "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/patientId"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="1.Patient's ID"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="2.Age"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientId" />
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isSmokes">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15.Gender"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/maleOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/femaleOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/whiteCells"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="3.Quantity of white blood cells"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <EditText
+        android:id="@+id/redCells"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="4.Quantity of red blood cells"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteCells" />
+
+    <EditText
+        android:id="@+id/hemoglobinL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="5.Hemoglobin"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redCells" />
+
+    <EditText
+        android:id="@+id/ironL"
+        android:layout_width="116dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="7dp"
+        android:hint="6.Iron"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hemoglobinL" />
+
+    <EditText
+        android:id="@+id/alkPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="7.Phosphatase"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ironL" />
+
+    <EditText
+        android:id="@+id/hctL"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="8.HCT"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alkPos" />
+
+    <EditText
+        android:id="@+id/ureaL"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="7dp"
+        android:hint="9.Urea"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hctL" />
+
+    <EditText
+        android:id="@+id/creatinineL"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="10.Creatinine"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ureaL" />
+
+    <EditText
+        android:id="@+id/hdlL"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="11.HDL"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creatinineL" />
+
+    <EditText
+        android:id="@+id/neutL"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:hint="12.Neutrophil"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hdlL" />
+
+    <EditText
+        android:id="@+id/lymphL"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="37dp"
+        android:hint="13.Lymphocytes"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <RadioGroup
+        android:id="@+id/isSmokes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lymphL">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14.Smoke Cigarettes"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/smokes"
+            android:layout_width="66dp"
+            android:layout_height="22dp"
+            android:text="No"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/nSmokes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/fever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16.Has fever"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/notUsingOtherMed"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <RadioGroup
+
+        android:id="@+id/eastern"
+        android:layout_width="120dp"
+        android:layout_height="108dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fever">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="17.From eastern communities"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/IsEastern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/notEastern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="15sp" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+
+        android:id="@+id/ethiopian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eastern">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18.Ethiopian"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/yes7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/no7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <RadioGroup
+
+        android:id="@+id/question20"
+        android:layout_width="153dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ethiopian">
+
+        <TextView
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:text="19.Diarrhea/Vomiting"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/yes8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/no8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="15sp" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/diagnoseB"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:text="Diagnose"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
